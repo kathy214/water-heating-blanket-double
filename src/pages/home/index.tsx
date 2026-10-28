@@ -207,14 +207,14 @@ export function Home() {
         >
           <Text className={styles.gearArea}>{Strings.getLang('areaA')}</Text>
           <View className={styles.gearShow}>
-            <Text className={styles.gearNum}>{switchA ? tempCurrentADp : '--'}</Text>
+            <Text className={styles.gearNum}>{switchA ? tempSetA : '--'}</Text>
             <Text className={styles.gearUnit}>{Strings.getLang('gearUnit')}</Text>
           </View>
         </View>
         <View className={`${styles.gearBox} ${!switchB ? styles.gearBoxDisabled : ''}`}>
           <Text className={styles.gearArea}>{Strings.getLang('areaB')}</Text>
           <View className={styles.gearShow}>
-            <Text className={styles.gearNum}>{switchB ? tempCurrentBDp : '--'}</Text>
+            <Text className={styles.gearNum}>{switchB ? tempSetB : '--'}</Text>
             <Text className={styles.gearUnit}>{Strings.getLang('gearUnit')}</Text>
           </View>
         </View>
